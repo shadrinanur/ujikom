@@ -1,0 +1,48 @@
+<template>
+    <div class="">
+  <header class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-blue-900 md:mx-auto md:flex-row md:items-center">
+    <a href="#" class="flex items-center whitespace-nowrap text-2xl font-black">
+      <span class="mr-2 text-4xl text-blue-500">
+        <svg xmlns="" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.925 16.875Q5.2 16.225 4.1 14.713Q3 13.2 3 11.25q0-1.975.938-3.513Q4.875 6.2 6 5.15q1.125-1.05 2.062-1.6L9 3v2.475q0 .625.45 1.062q.45.438 1.075.438q.35 0 .65-.15q.3-.15.5-.425L12 6q.95.55 1.625 1.35t1.025 1.8l-1.675 1.675q-.05-.6-.287-1.175q-.238-.575-.638-1.05q-.35.2-.738.287q-.387.088-.787.088q-1.1 0-1.987-.612Q7.65 7.75 7.25 6.725q-.95.925-1.6 2.062Q5 9.925 5 11.25q0 .775.275 1.462q.275.688.75 1.213q.05-.5.287-.938q.238-.437.588-.787L9 10.1l2.15 2.1q.05.05.1.125t.1.125l-1.425 1.425q-.05-.075-.087-.125q-.038-.05-.088-.1L9 12.925l-.7.7q-.125.125-.212.287q-.088.163-.088.363q0 .3.175.537q.175.238.45.363ZM9 10.1Zm0 0ZM7.4 22L6 20.6L19.6 7L21 8.4L17.4 12H21v2h-5.6l-.5.5l1.5 1.5H21v2h-2.6l2.1 2.1l-1.4 1.4l-2.1-2.1V22h-2v-4.6l-1.5-1.5l-.5.5V22h-2v-3.6Z" /></svg>
+      </span>
+      volunteerhub
+    </a>
+    <input type="checkbox" class="peer hidden" id="navbar-open" />
+    <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+      <span class="sr-only">Toggle Navigation</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <nav aria-label="Header Navigation" class="flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all peer-checked:mt-8 peer-checked:max-h-56 md:ml-24 md:max-h-full md:flex-row md:items-start">
+      <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+        <li class="md:mr-12">
+          <a href="/login" class="rounded-full border-2 border-blue-900 px-6 py-1 text-blue-900 transition-colors hover:bg-blue-900 hover:text-white">Login</a>
+        </li>
+        <li class="md:mr-12">
+          <button a href="/register" class="rounded-full border-2 border-blue-900 px-6 py-1 text-blue-900 transition-colors hover:bg-blue-900 hover:text-white">Register</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="mx-auto my-10 flex max-w-xl flex-col rounded-3xl border p-4 sm:px-16 sm:py-16 lg:max-w-screen-lg lg:flex-row">
+  <div class="lg:w-1/2 lg:pr-8">
+    <div class="">
+      <button class="mr-4 mb-2 rounded-full bg-blue-600 px-2 py-1 font-medium text-white transition">Code</button>
+      <button class="mr-4 mb-2 rounded-full px-2 py-1 font-medium text-gray-600 transition focus:text-blue-600 focus:outline-none focus:ring focus:ring-blue-600 hover:text-blue-600 hover:ring hover:ring-blue-600">Atom</button>
+      <button class="mr-4 mb-2 rounded-full px-2 py-1 font-medium text-gray-600 transition focus:text-blue-600 focus:outline-none focus:ring focus:ring-blue-600 hover:text-blue-600 hover:ring hover:ring-blue-600">Visual Studio</button>
+      <button class="mr-4 mb-2 rounded-full px-2 py-1 font-medium text-gray-600 transition focus:text-blue-600 focus:outline-none focus:ring focus:ring-blue-600 hover:text-blue-600 hover:ring hover:ring-blue-600">Sublime</button>
+    </div>
+    <div class="mt-4">
+      <h2 class="text-3xl font-medium text-gray-700">Transformasi Digital dalam Manajemen Sukarelawan.</h2>
+      <p class="mt-6 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequatur fuga odio laudantium dolor, dolorum magnam. Ducimus quasi, odio harum eum repellendus, minus placeat fugit natus omnis neque ea maiores, reiciendis culpa!</p>
+    </div>
+  </div>
+  <div class="-order-1 mb-8 lg:order-1 lg:mb-0 lg:w-1/2">
+    <img class="border-blue-600/10 rounded-3xl border shadow-md" src="../assets/icon1.png" alt="" />
+  </div>
+</section>
+
+</div>
+</template>
