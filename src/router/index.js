@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Beranda from "../views/Beranda.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
-import Home from "../views/Home.vue";
+import Dashboard from "@/views/Dashboard.vue";
 
 const routes = [ 
     {
@@ -21,10 +21,11 @@ const routes = [
         component: Register,
     },
     {
-        path: "/home",
-        name: "Home",
-        component: Home,
+        path: "/dashboard",
+        name: "Dashboard",
+        component: Dashboard,
     },
+    
 ];
 
 const router = createRouter({

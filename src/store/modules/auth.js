@@ -15,10 +15,10 @@ const auth = {
     gettersUserAddress: (state) => state.userAddress,
   },
   actions: {
-    async login({ commit }, credentials) {
+    async performLogin({ commit }, credentials) {
       try {
         const response = await axios.post(
-          "http://10.10.8.92:3000/api/v1/auth/login",
+          "http://192.168.100.37:3000/api/v1/auth/login",
           credentials
         );
         const token = response.data.access_token;
@@ -41,7 +41,7 @@ const auth = {
      async register({ commit }, credentials) {
       try {
           const response = await axios.post(
-              "",
+              "http://192.168.100.37:3000/api/v1/auth/register",
               credentials
           );
           const token = response.data.access_token;
@@ -65,42 +65,6 @@ const auth = {
       }
     },
 
-    // info user
-//    async getUserInfo({ state }) {
-//     try {
-//       const response = await axios.get(
-//         "http://10.10.10.118:3000/api/v1/auth/login",
-//         {
-//           headers: {
-//             Authorization: `Bearer ${state.token}`,
-//           },
-//         }
-//       );
-//       return response.data.user;
-//     } catch (error) {
-//       console.error(error);
-//       return null;
-//     }
-//    },
-
-//    async getUserAddress({ state, commit }) {
-//     try { 
-//       const response = await axios.get(
-//         "https://ecommerce.olipiskandar.com/api/v1/user/addresses",
-//   {
-//     headers: {
-//       Authorization: `Bearer ${localStorage.getItem('token')}`,
-//     },
-//   }
-// );
-// commit('SET_ADDRESS', response.data)
-//   return response.data;
-//   } catch (error) {
-//     console.error(error);
-//     return null;
-//     }
-//    },
-    
     logout({ commit }) {
       // Remove token from localStorage
       const token = localStorage.getItem("token");
@@ -123,7 +87,6 @@ const auth = {
     },
     SET_USER(state, user) {
       state.user = user;
-      // console.log("User data stored in store:", user);
   },
   SET_ADDRESS(state, address) {
     state.userAddress = address;

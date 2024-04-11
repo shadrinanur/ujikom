@@ -20,7 +20,7 @@
           <a href="/login" class="rounded-full border-2 border-blue-900 px-6 py-1 text-blue-900 transition-colors hover:bg-blue-900 hover:text-white">Login</a>
         </li>
         <li class="md:mr-12">
-          <button a href="/register" class="rounded-full border-2 border-blue-900 px-6 py-1 text-blue-900 transition-colors hover:bg-blue-900 hover:text-white">Register</button>
+          <a a href="/register" class="rounded-full border-2 border-blue-900 px-6 py-1 text-blue-900 transition-colors hover:bg-blue-900 hover:text-white">Register</a>
         </li>
       </ul>
     </nav>
@@ -43,6 +43,5 @@
     <img class="border-blue-600/10 rounded-3xl border shadow-md" src="../assets/icon1.png" alt="" />
   </div>
 </section>
-
 </div>
 </template>

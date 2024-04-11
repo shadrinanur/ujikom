@@ -1,49 +1,58 @@
 <template>
-  <!-- component -->
-<div class="py-6">
-  <div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
-        <div class="hidden lg:block lg:w-1/2 bg-cover" style="background-image:url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')"></div>
-        <div class="w-full p-8 lg:w-1/2">
-            <h2 class="text-2xl font-semibold text-gray-700 text-center">Brand</h2>
-            <p class="text-xl text-gray-600 text-center">Welcome back!</p>
-            <a href="#" class="flex items-center justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100">
-                <div class="px-4 py-3">
-                    <svg class="h-6 w-6" viewBox="0 0 40 40">
-                        <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#FFC107"/>
-                        <path d="M5.25497 12.2425L10.7308 16.2583C12.2125 12.59 15.8008 9.99999 20 9.99999C22.5491 9.99999 24.8683 10.9617 26.6341 12.5325L31.3483 7.81833C28.3716 5.04416 24.39 3.33333 20 3.33333C13.5983 3.33333 8.04663 6.94749 5.25497 12.2425Z" fill="#FF3D00"/>
-                        <path d="M20 36.6667C24.305 36.6667 28.2167 35.0192 31.1742 32.34L26.0159 27.975C24.3425 29.2425 22.2625 30 20 30C15.665 30 11.9842 27.2359 10.5975 23.3784L5.16254 27.5659C7.92087 32.9634 13.5225 36.6667 20 36.6667Z" fill="#4CAF50"/>
-                        <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#1976D2"/>
-                    </svg>
-                </div>
-                <h1 class="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">Sign in with Google</h1>
-            </a>
-            <div class="mt-4 flex items-center justify-between">
-                <span class="border-b w-1/5 lg:w-1/4"></span>
-                <a href="#" class="text-xs text-center text-gray-500 uppercase">or login with email</a>
-                <span class="border-b w-1/5 lg:w-1/4"></span>
-            </div>
-            <div class="mt-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
-                <input class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="email">
-            </div>
-            <div class="mt-4">
-                <div class="flex justify-between">
-                    <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
-                    <a href="#" class="text-xs text-gray-500">Forget Password?</a>
-                </div>
-                <input class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="password">
-            </div>
-            <div class="mt-8">
-                <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">Login</button>
-            </div>
-            <div class="mt-4 flex items-center justify-between">
-                <span class="border-b w-1/5 md:w-1/4"></span>
-                <a href="#" class="text-xs text-gray-500 uppercase">or sign up</a>
-                <span class="border-b w-1/5 md:w-1/4"></span>
-            </div>
+ <div class="flex min-h-screen w-screen w-full items-center justify-center text-gray-600 bg-gray-50">
+  <div class="relative">
+    
+<div class="hidden sm:block h-56 w-56 text-indigo-300 absolute a-z-10 -left-20 -top-20">
+   <svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(0.6) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='none'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='currentColor'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/></svg>
+  </div>
+<div class="hidden sm:block h-28 w-28 text-indigo-300 absolute a-z-10 -right-20 -bottom-20">
+   <svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='b' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(0.5) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='none'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='currentColor'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#b)'/></svg>
+  </div>
+    <!-- Register -->
+    <div class="relative flex flex-col sm:w-[30rem] rounded-lg border-gray-400 bg-white shadow-lg px-4">
+      <div class="flex-auto p-6">
+        <!-- Logo -->
+        <div class="mb-10 flex flex-shrink-0 flex-grow-0 items-center justify-center overflow-hidden">
+          <a href="#" class="flex cursor-pointer items-center gap-2 text-indigo-500 no-underline hover:text-indigo-500">
+            <span class="flex-shrink-0 text-3xl font-black lowercase tracking-tight opacity-100">Futurism.</span>
+          </a>
         </div>
+        <!-- /Logo -->
+        <h4 class="mb-2 font-medium text-gray-700 xl:text-xl">Welcome to futurism!</h4>
+        <p class="mb-6 text-gray-500">Please sign-in to access your account</p>
+
+        <form id="" class="mb-4" @submit.prevent="performLogin">
+          <div class="mb-4">
+            <label for="email" class="mb-2 inline-block text-xs font-medium uppercase text-gray-700">Email</label>
+            <input type="text" class="block w-full cursor-text appearance-none rounded-md border border-gray-400 bg-gray-100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow" id="email" v-model="email" placeholder="Enter your email" autofocus="" />
+          </div>    
+          <div class="mb-4">
+            <div class="flex justify-between">
+              <label class="mb-2 inline-block text-xs font-medium uppercase text-gray-700" for="password">Password</label>
+              <a href="auth-forgot-password-basic.html" class="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500">
+              </a>
+            </div>
+            <div class="relative flex w-full flex-wrap items-stretch">
+              <input type="password" id="password" class="relative block flex-auto cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow" v-model="password" placeholder="············" />
+            </div>
+          </div>
+          <div class="mb-4">
+          </div>
+          <div class="mb-4">
+            <button type="button" @click="performLogin" class="grid w-full cursor-pointer select-none rounded-md border border-indigo-500 bg-indigo-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-indigo-600 hover:bg-indigo-600 hover:text-white focus:border-indigo-600 focus:bg-indigo-600 focus:text-white focus:shadow-none">Sign in</button>
+          </div>
+        </form>
+
+        <p class="mb-4 text-center">
+          New on futurism?
+          <a href="#" class="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500"> Create an account </a>
+        </p>
+      </div>
     </div>
+    <!-- /Register -->
+  </div>
 </div>
+
 </template>
 <script>
 import { mapActions, mapGetters } from 'vuex';
@@ -51,7 +60,7 @@ import { mapActions, mapGetters } from 'vuex';
 export default {
     data() {
         return {
-            username: '',
+            email: '',
             password: '',
         };
     },
@@ -62,15 +71,13 @@ export default {
         ...mapActions('auth', ['login']),
         async performLogin() {
             const credentials = {
-                username: this.username,
+                email: this.email,
                 password: this.password,
             };
-
             const success = await this.login(credentials);
-
             if (success && this.isAuthenticated) {
                 // Redirect to the desired route on successful login
-                this.$router.push('/home');
+                this.$router.push('/dashboard');
             } else {
                 // Handle login error
                 if (this.loginError) {
@@ -80,6 +87,7 @@ export default {
                 }
             }
         },
+
     },
 };
 </script>
