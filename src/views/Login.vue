@@ -18,7 +18,7 @@
           </a>
         </div>
         <!-- /Logo -->
-        <h4 class="mb-2 font-medium text-gray-700 xl:text-xl">Welcome to futurism!</h4>
+        <h4 class="mb-2 font-medium text-gray-700 xl:text-xl">Welcome!</h4>
         <p class="mb-6 text-gray-500">Please sign-in to access your account</p>
 
         <form id="" class="mb-4" @submit.prevent="performLogin">
@@ -30,13 +30,12 @@
             <div class="flex justify-between">
               <label class="mb-2 inline-block text-xs font-medium uppercase text-gray-700" for="password">Password</label>
               <a href="auth-forgot-password-basic.html" class="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500">
+                <small class=" ">Forgot Password?</small>
               </a>
             </div>
             <div class="relative flex w-full flex-wrap items-stretch">
               <input type="password" id="password" class="relative block flex-auto cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow" v-model="password" placeholder="············" />
             </div>
-          </div>
-          <div class="mb-4">
           </div>
           <div class="mb-4">
             <button type="button" @click="performLogin" class="grid w-full cursor-pointer select-none rounded-md border border-indigo-500 bg-indigo-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-indigo-600 hover:bg-indigo-600 hover:text-white focus:border-indigo-600 focus:bg-indigo-600 focus:text-white focus:shadow-none">Sign in</button>
@@ -54,40 +53,49 @@
 </div>
 
 </template>
+
 <script>
-import { mapActions, mapGetters } from 'vuex';
+import { mapActions } from "vuex";
 
 export default {
-    data() {
-        return {
-            email: '',
-            password: '',
-        };
-    },
-    computed: {
-        ...mapGetters('auth',['loginError', 'isAuthenticated']),
-    },
-    methods: {
-        ...mapActions('auth', ['login']),
-        async performLogin() {
-            const credentials = {
-                email: this.email,
-                password: this.password,
-            };
-            const success = await this.login(credentials);
-            if (success && this.isAuthenticated) {
-                // Redirect to the desired route on successful login
-                this.$router.push('/dashboard');
-            } else {
-                // Handle login error
-                if (this.loginError) {
-                    alert(this.loginError);
-                } else {
-                    alert("Login Failed");
-                }
-            }
-        },
+  data() {
+    return {
+      email: "",
+      password: "",
+    };
+  },
+  methods: {
+    ...mapActions("auth", ["login"]),
+    async performLogin() {
+      if (!this.email || !this.password) {
+        alert('Please enter both email and password.');
+        return;
+      }
 
-    },
-};
+      const credentials = {
+        email: this.email,
+        password: this.password,
+      };
+      try {
+        const result = await this.login(credentials);
+        if (result == true) {
+          alert('Login Success');
+          this.$router.push("/");
+        } else {
+          alert('Invalid email or password. Please try again.');
+        }
+
+      } catch (error) {
+        console.error('Error during login:', error);
+        if (error.response && error.response.status === 401) {
+          // Unauthorized (invalid credentials)
+          alert('Invalid email or password. Please try again.');
+        } else {
+          alert('Login Failed');
+        }
+      }
+    }
+  }
+}
 </script>
+

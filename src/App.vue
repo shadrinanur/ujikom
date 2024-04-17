@@ -1,6 +1,7 @@
 <template>
   <div>
-    <SidebarAdmin v-if="showSidebarAdmin"></SidebarAdmin>
+    <Sidebar v-if="showSidebar"></Sidebar>
+    <!-- <SidebarAdmin v-if="showSidebarAdmin"></SidebarAdmin> -->
     <main>
     <router-view></router-view>
     <!-- <Footer></Footer> -->
@@ -9,24 +10,27 @@
 </template>
 
 <script>
-import SidebarAdmin from './components/SidebarAdmin.vue';
+import Sidebar from './components/Sidebar.vue';
+// import SidebarAdmin from './components/SidebarAdmin.vue';
 // import Footer from './components/Footer.vue';
 
 export default {
   components: {
-    SidebarAdmin,
+    Sidebar,
+    // SidebarAdmin,
     // Footer,
   },
   data() {
     return {
-      showSidebarAdmin: true,  
+      showSidebar: true,
+      // showSidebarAdmin: true,  
     };
   },
   watch: {
     // Menanggapi perubahan rute
     $route(to) {
       // Mengubah showSidebar berdasarkan halaman tertentu
-      this.showSidebarAdmin= !["Beranda", "Login", "Register"].includes(to.name);
+      this.showSidebar= !["Beranda", "Login", "Register"].includes(to.name);
     },
 },
 }

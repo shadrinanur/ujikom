@@ -15,33 +15,40 @@ const auth = {
     gettersUserAddress: (state) => state.userAddress,
   },
   actions: {
-    async performLogin({ commit }, credentials) {
+    async login({ commit }, credentials) {
       try {
         const response = await axios.post(
-          "http://192.168.100.37:3000/api/v1/auth/login",
+          'http://192.168.43.230:3000/api/v1/auth/login',
           credentials
         );
-        const token = response.data.access_token;
-        // const user = response.data.user;
-        // Save token to localStorage
-        localStorage.setItem("token", token);
-        commit("SET_TOKEN", token);
-        commit("SET_LOGIN_ERROR", null);
-        // localStorage.setItem("user", JSON.stringify(user));
-        console.log("Token saved:", token);
+    
+        // Tangani respons dari server
+        // console.log('Server Response:', response);
+        const token = response.data.token; // Ambil token dari respons
+        const role = response.data.role; // Ambil peran pengguna dari respons
+    
+        // Simpan token dan peran pengguna
+        localStorage.setItem('token', token);
+        localStorage.setItem('role', role);
+    
+        // console.log('Token:', token); // Cek token yang disimpan
+        // console.log('Role:', role); // Cek peran pengguna
+    
+        commit('SET_TOKEN', token);
+        commit('SET_ROLE', role); // Simpan peran ke state Vuex
+    
         return true;
       } catch (error) {
-        const errorMessage = error.response.data.message || "Login failed";
-        commit("SET_LOGIN_ERROR", errorMessage);
-        console.error(error);
+        console.log(error);
         return false;
+
       }
     },  
     
      async register({ commit }, credentials) {
       try {
           const response = await axios.post(
-              "http://192.168.100.37:3000/api/v1/auth/register",
+              "http://192.168.43.230:3000/api/v1/auth/register",
               credentials
           );
           const token = response.data.access_token;
