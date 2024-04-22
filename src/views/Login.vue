@@ -1,56 +1,84 @@
 <template>
- <div class="flex min-h-screen w-screen w-full items-center justify-center text-gray-600 bg-gray-50">
-  <div class="relative">
-    
-<div class="hidden sm:block h-56 w-56 text-indigo-300 absolute a-z-10 -left-20 -top-20">
-   <svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(0.6) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='none'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='currentColor'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/></svg>
-  </div>
-<div class="hidden sm:block h-28 w-28 text-indigo-300 absolute a-z-10 -right-20 -bottom-20">
-   <svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='b' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(0.5) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='none'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='currentColor'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#b)'/></svg>
-  </div>
-    <!-- Register -->
-    <div class="relative flex flex-col sm:w-[30rem] rounded-lg border-gray-400 bg-white shadow-lg px-4">
-      <div class="flex-auto p-6">
-        <!-- Logo -->
-        <div class="mb-10 flex flex-shrink-0 flex-grow-0 items-center justify-center overflow-hidden">
-          <a href="#" class="flex cursor-pointer items-center gap-2 text-indigo-500 no-underline hover:text-indigo-500">
-            <span class="flex-shrink-0 text-3xl font-black lowercase tracking-tight opacity-100">Futurism.</span>
-          </a>
+
+  <!-- component -->
+<body class="antialiased bg-gradient-to-br from-green-100 to-white">
+    <div class="container px-6 mx-auto mx-auto">
+      <div
+        class="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center">
+        <div class="flex flex-col w-full">
+          <div>
+            <img src="../assets/login1.png" class="w-100 h-100 mx-auto md:float-left" alt="Icon">
+          </div>
         </div>
-        <!-- /Logo -->
-        <h4 class="mb-2 font-medium text-gray-700 xl:text-xl">Welcome!</h4>
-        <p class="mb-6 text-gray-500">Please sign-in to access your account</p>
+        <div class="w-full md:w-full lg:w-9/12 mx-auto md:mx-0">
+          <div class="bg-white p-10 flex flex-col w-full shadow-xl rounded-xl">
+            <h2 class="text-2xl font-bold text-gray-800 text-left mb-5">
+              Masuk
+            </h2>
+            <form id="" class="mb-4" @submit.prevent="performLogin">
+              <div class="flex flex-col w-full my-5" >
+                <label for="email" class="text-gray-500 mb-2">Email</label>
+                <input
+                  type="text"
+                  class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
+                  id="email"
+                  v-model="email"
+                  placeholder="Masukkan email anda"
+                  required/>
+                 </div>
 
-        <form id="" class="mb-4" @submit.prevent="performLogin">
-          <div class="mb-4">
-            <label for="email" class="mb-2 inline-block text-xs font-medium uppercase text-gray-700">Email</label>
-            <input type="text" class="block w-full cursor-text appearance-none rounded-md border border-gray-400 bg-gray-100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow" id="email" v-model="email" placeholder="Enter your email" autofocus="" />
-          </div>    
-          <div class="mb-4">
-            <div class="flex justify-between">
-              <label class="mb-2 inline-block text-xs font-medium uppercase text-gray-700" for="password">Password</label>
-              <a href="auth-forgot-password-basic.html" class="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500">
-                <small class=" ">Forgot Password?</small>
-              </a>
-            </div>
-            <div class="relative flex w-full flex-wrap items-stretch">
-              <input type="password" id="password" class="relative block flex-auto cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-indigo-500 focus:bg-white focus:text-gray-600 focus:shadow" v-model="password" placeholder="············" />
-            </div>
-          </div>
-          <div class="mb-4">
-            <button type="button" @click="performLogin" class="grid w-full cursor-pointer select-none rounded-md border border-indigo-500 bg-indigo-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-indigo-600 hover:bg-indigo-600 hover:text-white focus:border-indigo-600 focus:bg-indigo-600 focus:text-white focus:shadow-none">Sign in</button>
-          </div>
-        </form>
+               <div class="flex flex-col w-full my-5">
+                <label for="password" class="text-gray-500 mb-2">Password</label>
+                <input
+                 type="password"
+                 class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
+                  id="password"
+                  v-model="password"
+                  placeholder="Masukkan kata sandi anda"
+                  required/>
+              </div>
 
-        <p class="mb-4 text-center">
-          New on futurism?
-          <a href="#" class="cursor-pointer text-indigo-500 no-underline hover:text-indigo-500"> Create an account </a>
-        </p>
+              <div class="flex flex-col w-full my-5">
+                <button
+                  type="button"
+                  @click="performLogin"
+                  class="w-full py-4 bg-green-600 rounded-lg text-green-100">
+                  <div class="flex flex-row items-center justify-center">
+                    <div class="mr-2">
+                      <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="font-bold">Masuk</div>
+                  </div>
+                </button>
+                <div class="flex justify-evenly mt-5">
+                
+                  <a
+                    href="/register"
+                    class="w-full text-center font-medium text-gray-500"
+                    >Belum punya akun? Ayo Daftar!</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- /Register -->
-  </div>
-</div>
+  </body>
+ 
 
 </template>
 
@@ -66,35 +94,38 @@ export default {
   },
   methods: {
     ...mapActions("auth", ["login"]),
-    async performLogin() {
-      if (!this.email || !this.password) {
-        alert('Please enter both email and password.');
-        return;
-      }
+async performLogin() {
+  // Periksa apakah email atau password kosong
+  if (!this.email.trim() || !this.password.trim()) {
+    alert('Please enter both email and password.');
+    return;
+  }
 
-      const credentials = {
-        email: this.email,
-        password: this.password,
-      };
-      try {
-        const result = await this.login(credentials);
-        if (result == true) {
-          alert('Login Success');
-          this.$router.push("/");
-        } else {
-          alert('Invalid email or password. Please try again.');
-        }
+  const credentials = {
+    email: this.email,
+    password: this.password,
+  };
 
-      } catch (error) {
-        console.error('Error during login:', error);
-        if (error.response && error.response.status === 401) {
-          // Unauthorized (invalid credentials)
-          alert('Invalid email or password. Please try again.');
-        } else {
-          alert('Login Failed');
-        }
-      }
+  try {
+    const result = await this.login(credentials);
+    if (result == true) {
+      alert('Login Success');
+      this.$router.push("/pendaftaran");
+    } else {
+      alert('Invalid email or password. Please try again.');
     }
+
+  } catch (error) {
+    console.error('Error during login:', error);
+    if (error.response && error.response.status === 401) {
+      // Unauthorized (invalid credentials)
+      alert('Invalid email or password. Please try again.');
+    } else {
+      alert('Login Failed');
+    }
+  }
+}
+
   }
 }
 </script>

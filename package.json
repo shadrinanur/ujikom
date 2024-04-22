@@ -12,6 +12,7 @@
     "flowbite": "^2.2.1",
     "vue": "^3.4.15",
     "vue-router": "^4.0.13",
+    "vuejs-datepicker": "^1.6.2",
     "vuex": "^4.1.0"
   },
   "devDependencies": {

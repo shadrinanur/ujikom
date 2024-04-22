@@ -3,6 +3,12 @@ import Beranda from "../views/Beranda.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import Dashboard from "@/views/Dashboard.vue";
+import Pendaftaran from "@/views/Pendaftaran.vue";
+import Event from "@/views/Event.vue";
+import Laporan from "@/views/Laporan.vue";
+import Panduan from "@/views/Panduan.vue";
+import Syarat from "@/views/Syarat.vue";
+import Tentang from "@/views/Tentang.vue";
 
 const routes = [ 
     {
@@ -25,6 +31,37 @@ const routes = [
         name: "Dashboard",
         component: Dashboard,
     },
+    {
+        path: "/pendaftaran",
+        name: "Pendaftaran",
+        component: Pendaftaran, 
+    },
+    {
+        path: "/event",
+        name: "Event",
+        component: Event, 
+    },
+    {
+        path: "/laporan",
+        name: "Laporan",
+        component: Laporan, 
+    },
+    {
+        path: "/panduan",
+        name: "Panduan",
+        component: Panduan, 
+    },
+    {
+        path: "/syarat",
+        name: "Syarat",
+        component: Syarat, 
+    },
+    {
+        path: "/tentang",
+        name: "Tentang",
+        component: Tentang, 
+    },
+
     
 ];
 

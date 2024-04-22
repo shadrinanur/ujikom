@@ -30,7 +30,7 @@ export default {
     // Menanggapi perubahan rute
     $route(to) {
       // Mengubah showSidebar berdasarkan halaman tertentu
-      this.showSidebar= !["Beranda", "Login", "Register"].includes(to.name);
+      this.showSidebar= !["Beranda", "Login", "Register", "Panduan",  "Syarat","Tentang"].includes(to.name);
     },
 },
 }
