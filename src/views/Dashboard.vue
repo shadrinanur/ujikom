@@ -1,201 +1,84 @@
 <template>
     <!-- component -->
-<nav class=" bg-white w-full flex relative justify-between items-center mx-auto px-8 h-20">
-    <div class="inline-flex">
-    
-    </div>
-    <!-- search bar --> 
-   </nav>
-<div>
-    <!-- component -->
-<div class="bg-indigo-600">
-        <div class="lg:grid lg:grid-cols-2">
-            <div class="py-24 px-10 lg:px-0 max-w-3xl lg:max-w-md mx-auto">
-                <h2 class="text-4xl tracking-tight font-extrabold text-gray-100">
-                    <span class="block">Ready to dive in?</span>
-                    <span class="block">Start your free trial today.</span>
-                </h2>
-                <p class="text-gray-300 mt-5">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-                <div class="inline-block shadow mt-5">
-                    <a href="#" class="inline-block py-3 px-4 bg-white hover:bg-indigo-100 text-indigo-500 font-medium border border-transparent rounded-md">Sign up for free</a>
+<!-- Create By Joker Banny -->
+<div class="min-h-screen bg-yellow-400 flex justify-center items-center py-20">
+  <div class="container mx-auto p-12 bg-gray-100 rounded-xl">
+    <h1 class="text-4xl uppercase font-bold from-current mb-8">Responsive dynamic cards</h1>
+    <!-- Box-1 -->
+    <div class="sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 space-y-4 sm:space-y-0">
+      <div class="bg-white">
+        <div>
+          <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
+            <div>
+              <img class="w-full" src="https://i.imgur.com/lmYYa2s.png" />
+              <div class="px-4 py-2">
+                <h1 class="text-xl font-gray-700 font-bold">Papież gigant</h1>
+                <div class="flex space-x-2 mt-2">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </span>
+                  <h3 class="text-lg text-gray-600 font-semibold mb-2">New York</h3>
                 </div>
+                <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo interesująco wpisuje się w poprzemysłowy krajobraz tego miasta o mocnych lewicowych, robotniczych i socjalistycznych tradycjach. Powstały w 2013 roku, uchodzi za najwyższego Karola Wojtyłę w Polsce.</p>
+                <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read more</button>
+              </div>
             </div>
-            <div class="lg:relative lg:mt-16">
-                <img class="lg:absolute lg:inset-0 h-60 w-full lg:h-full object-cover object-center lg:rounded-tl-md" src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Woman workcation on the beach">
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- <div class="min-h-[600px] flex flex-row">
-      <div class="mt-1">
-        <div class="p-4 xl:ml-80">
-            <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
-        <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
-          <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-blue-600 to-blue-400 text-white shadow-blue-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-6 h-6 text-white">
-              <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd"></path>
-            </svg>
           </div>
-          <div class="p-4 text-right">
-            <div class="mx-5">
-             <h4 class="text-2xl font-semibold text-gray-700">8,282</h4>
-             <div class="text-gray-500">New Users</div>
-             </div>
-          </div> 
-        </div>
-       
-        <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
-          <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-green-600 to-green-400 text-white shadow-green-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-6 h-6 text-white">
-              <path d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z"></path>
-            </svg>
-          </div>
-          <div class="p-4 text-right">
-            <div class="mx-5">
-             <h4 class="text-2xl font-semibold text-gray-700">8,282</h4>
-             <div class="text-gray-500">New Users</div>
-             </div>
-          </div>
-        </div>
-    </div>
         </div>
       </div>
-      <div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg mt-4">
-<table class="w-3/4 mt-4">
-    <thead>
-  <tr>
-      <th
-          class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-          Name</th>
-      <th
-          class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-          Title</th>
-      <th
-          class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-          Status</th>
-      <th
-          class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-          Role</th>
-      <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
-  </tr>
-   </thead>
-   <tbody class="bg-white">
-  <tr>
-  </tr>
-  <tr>
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <div class="flex items-center">
-              <div class="flex-shrink-0 w-10 h-10">
-                  <img class="w-10 h-10 rounded-full"
-   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-   alt="">
+      <!-- Box-2 -->
+      <div class="bg-white">
+        <div>
+          <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
+            <div>
+              <img class="w-full" src="https://i.imgur.com/csPYilq.png" />
+              <div class="px-4 py-2">
+                <h1 class="text-xl font-gray-700 font-bold">Papież gigant</h1>
+                <div class="flex space-x-2 mt-2">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </span>
+                  <h3 class="text-lg text-gray-600 font-semibold mb-2">New York</h3>
+                </div>
+                <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo interesująco wpisuje się w poprzemysłowy krajobraz tego miasta o mocnych lewicowych, robotniczych i socjalistycznych tradycjach. Powstały w 2013 roku, uchodzi za najwyższego Karola Wojtyłę w Polsce.</p>
+                <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read more</button>
               </div>
-    
-              <div class="ml-4">
-                  <div class="text-sm font-medium leading-5 text-gray-900">John Doe
-                  </div>
-                  <div class="text-sm leading-5 text-gray-500">john@example.com</div>
-              </div>
+            </div>
           </div>
-      </td>
-    
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <div class="text-sm leading-5 text-gray-900">Software Engineer</div>
-          <div class="text-sm leading-5 text-gray-500">Web dev</div>
-      </td>
-    
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <span
-              class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">Active</span>
-      </td>
-    
-      <td
-          class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-          Owner</td>
-    
-      <td
-          class="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap border-b border-gray-200">
-          <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-      </td>
-  </tr>
-  <tr>
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <div class="flex items-center">
-              <div class="flex-shrink-0 w-10 h-10">
-                  <img class="w-10 h-10 rounded-full"
-   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-   alt="">
+        </div>
+      </div>
+      <!-- Box-3 -->
+      <div class="bg-white">
+        <div>
+          <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
+            <div>
+              <img class="w-full" src="https://i.imgur.com/chvO4cX.png" />
+              <div class="px-4 py-2">
+                <h1 class="text-xl font-gray-700 font-bold">Papież gigant</h1>
+                <div class="flex space-x-2 mt-2">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </span>
+                  <h3 class="text-lg text-gray-600 font-semibold mb-2">New York</h3>
+                </div>
+                <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo interesująco wpisuje się w poprzemysłowy krajobraz tego miasta o mocnych lewicowych, robotniczych i socjalistycznych tradycjach. Powstały w 2013 roku, uchodzi za najwyższego Karola Wojtyłę w Polsce.</p>
+                <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read more</button>
               </div>
-    
-              <div class="ml-4">
-                  <div class="text-sm font-medium leading-5 text-gray-900">John Doe
-                  </div>
-                  <div class="text-sm leading-5 text-gray-500">john@example.com</div>
-              </div>
+            </div>
           </div>
-      </td>
-    
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <div class="text-sm leading-5 text-gray-900">Software Engineer</div>
-          <div class="text-sm leading-5 text-gray-500">Web dev</div>
-      </td>
-    
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <span
-              class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">Active</span>
-      </td>
-    
-      <td
-          class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-          Owner</td>
-    
-      <td
-          class="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap border-b border-gray-200">
-          <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-      </td>
-  </tr>
-  <tr>
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <div class="flex items-center">
-              <div class="flex-shrink-0 w-10 h-10">
-                  <img class="w-10 h-10 rounded-full"
-   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-   alt="">
-              </div>
-    
-              <div class="ml-4">
-                  <div class="text-sm font-medium leading-5 text-gray-900">John Doe
-                  </div>
-                  <div class="text-sm leading-5 text-gray-500">john@example.com</div>
-              </div>
-          </div>
-      </td>
-    
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <div class="text-sm leading-5 text-gray-900">Software Engineer</div>
-          <div class="text-sm leading-5 text-gray-500">Web dev</div>
-      </td>
-    
-      <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-          <span
-              class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">Active</span>
-      </td>
-    
-      <td
-           class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-           Owner</td>
-    
-       <td
-           class="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap border-b border-gray-200">
-           <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-       </td>
-   </tr>
-       </tbody>
-   </table>
-         </div>
-    </div> -->
-                   
-  </template>
-  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</template>

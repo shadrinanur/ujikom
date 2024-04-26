@@ -18,7 +18,7 @@ const auth = {
     async login({ commit }, credentials) {
       try {
         const response = await axios.post(
-          'http://192.168.43.230:3000/api/v1/auth/login',
+          'http://localhost:3000/api/v1/auth/login',
           credentials
         );
     
@@ -71,6 +71,7 @@ const auth = {
           return false;
       }
     },
+  
 
     logout({ commit }) {
       // Remove token from localStorage
@@ -79,7 +80,7 @@ const auth = {
       commit("SET_TOKEN", "");
       // Log token removed
       console.log("Token removed:", token);
-      window.location.href = "/login";
+      window.location.href = "/";
     },
   },
   mutations: {

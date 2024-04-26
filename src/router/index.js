@@ -7,7 +7,8 @@ import Pendaftaran from "@/views/Pendaftaran.vue";
 import Event from "@/views/Event.vue";
 import Laporan from "@/views/Laporan.vue";
 import Panduan from "@/views/Panduan.vue";
-import Syarat from "@/views/Syarat.vue";
+import Aktivitas from "@/views/Aktivitas.vue";
+
 import Tentang from "@/views/Tentang.vue";
 
 const routes = [ 
@@ -52,14 +53,14 @@ const routes = [
         component: Panduan, 
     },
     {
-        path: "/syarat",
-        name: "Syarat",
-        component: Syarat, 
-    },
-    {
         path: "/tentang",
         name: "Tentang",
         component: Tentang, 
+    },
+    {
+        path: "/aktivitas",
+        name: "Aktivitas",
+        component: Aktivitas, 
     },
 
     

@@ -14,14 +14,17 @@
     </div>
    
     <div class="hidden sm:block flex-shrink flex-grow-0 justify-start px-2">
+      <div class="hidden sm:block flex-shrink flex-grow-0 justify-start px-2">
   <div class="inline-block">
     <div class="inline-flex items-center max-w-full">
-      <a href="" class="menu-item">Panduan</a>
-      <a href="/syarat" class="menu-item">Syarat & Ketentuan</a>
-      <a href="/tentang" class="menu-item">Tentang kami</a>
+      <a href="#Pengertian" class="menu-item">Pengertian</a>
+      <a href="#TentangKami" class="menu-item">Tentang Kami</a>
+      <a href="#Syarat&Ketentuan" class="menu-item">Syarat & Ketentuan</a>
     </div>
   </div>
 </div>
+</div>
+
 
 <div class="flex-initial">
   <div class="flex justify-end items-center relative">
@@ -42,90 +45,157 @@
 <!-- end login -->
     </nav>
     <br>
+    <br>
     
   <div class="content">
-<div class="h-screen overflow-hidden relative before:block before:absolute  before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
-<img class="h-auto min-w-full" src="../assets/bghome.png" alt="image description">
-  <img src="" class="absolute top-0 left-0 min-h-full" alt="">
+    <div class="relative w-screen">
+  <img class="absolute -z-10 hidden h-96 w-full lg:block darkened-img" src="../assets/bghome.png">
+  <div class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
+    <div class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
+      <h2 class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <span class="relative inline-block">
+          
+          <div class="text-center">
+  <h2 class="text-2xl md:text-3xl">
+    <span class="leading-10 text-white">Jadikan Diri Sebagai Relawan</span>
+  </h2>
+  <p class="text-base text-white md:text-lg">Ubah niat baik menjadi aksi baik hari ini</p>
+</div>
+</span>
+</h2>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="mx-auto grid max-w-screen-md gap-8 px-5 sm:grid-cols-1 sm:px-2 md:grid-cols-3 ">
+  <div class="flex flex-row items-center rounded-lg border bg-emerald-50 px-8 py-8 shadow md:items-start">
+    <div class="flex items-center justify-center h-12 w-12 mr-3">
+      <!-- Icon SVG -->
+      <img class="img-responsive" src="https://indorelawan-production.nos.wjv-1.neo.id/images/home-page/organizations.svg">
+    </div>
+    <div class="flex flex-col justify-center">
+    <p class="justify-center text-lg font-medium">Lingkungan</p>
+  </div>
+  </div>
+  
+  <div class="flex flex-row items-center rounded-lg border bg-emerald-50 px-8 py-8 shadow md:items-start">
+    <div class="flex items-center justify-center h-12 w-12 mr-3">
+      <!-- Icon SVG -->
+      <img class="img-responsive" src="https://indorelawan-production.nos.wjv-1.neo.id/images/home-page/users.svg">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+</svg> -->
+    </div>
+    <p class="text-lg font-medium">Sosial</p>
+  </div>
+  <div class="flex flex-row items-center rounded-lg border bg-emerald-50 px-8 py-8 shadow md:items-start">
+    <div class="flex items-center justify-center h-12 w-12 mr-3">
+      <!-- Icon SVG -->
+      <img class="img-responsive" src="https://indorelawan-production.nos.wjv-1.neo.id/images/home-page/activities.svg">
+    </div>
+    <p class="text-lg font-medium">Organisasi</p>
+  </div>
+      
+    </div>
+  </div>
 </div>
 
 <br>
-<div class="bg-[#f7d0b6] py-20">
+<div id="Pengertian" class="bg-[#D1FAE5] py-20">
   <div class="max-w-screen-lg mx-auto flex justify-between items-center">
     <div class="max-w-xl">
       <h2 class="font-black text-sky-950 text-3xl mb-4">Pengertian Volunteer! </h2>
-      <p class="text-base text-sky-950">Halo! Volunteer atau sukarelawan merupakan salah satu bentuk keikutsertaan seseorang dalam melakukan kegiatan-kegiatan sosial. Biasanya kegiatan ini bertujuan untuk membantu menjawab permasalahan yang ada di lingkungan sekitar. Seseorang bisa dikatakan menjadi volunteer apabila melakukan kegiatan tersebut atas keinginannya sendiri, serta tidak memiliki tujuan utama untuk mencari keuntungan atau laba.</p>
-    </div>
-    
-  </div>
-</div>
-<div class="py-12 relative overflow-hidden bg-white">
-  <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
-    <div class="w-full flex flex-col items-end pr-16">
-      <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10"></h2>
-      <div class="h-full mt-auto overflow-hidden relative">
-        <img src="../assets/gambar1.jpg" class="h-full w-full object-contain" alt="">
-      </div>
-    </div>
-
-    <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
-      <div class="relative z-20 pl-12">
-        <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">Manfaat Menjadi Volunteer <br> </h2>
-        <p class="text-white text-m">
-          <b>> Meningkatkan Softskill atau Keterampilan </b> <br> Dengan menjadi volunteer kalian bisa meningkatkan softskill atau keterampilan. Keterampilan ini bisa menjadi modal kalian ke depan dalam menghadapi berbagai situasi.<br>
-
-          <b>> Menambah Referensi Pengalaman </b> <br>Dengan mengikuti kegiatan volunteer ini bisa jadi kalian akan mendapatkan hal-hal yang sama sekali belum kalian ketahui, realitanya seringkali kita memutuskan suatu hal berdasarkan pengalaman-pengalaman yang sudah dilalui.<br>
-         <b> > Melatih Kepekaan pada Sekitar </b> <br> secara tidak langsung kalian juga mengasah perasaan kalian untuk menjadi peka terhadap sesama, sikap peka ini mengajarkan kita dalam mengontrol emosi dan memahami kondisi orang lain.
-        </p>
-       
-      </div>
+      <p class="text-base text-sky-950">Halo! Volunteer atau su
+        karelawan merupakan salah satu bentuk keikutsertaan seseorang dalam melakukan kegiatan-kegiatan sosial. Biasanya kegiatan ini bertujuan untuk membantu menjawab permasalahan yang ada di lingkungan sekitar. Seseorang bisa dikatakan menjadi volunteer apabila melakukan kegiatan tersebut atas keinginannya sendiri, serta tidak memiliki tujuan utama untuk mencari keuntungan atau laba.</p>
     </div>
   </div>
 </div>
+<!-- End Konten Pengertian -->
 
-<div class="py-4 relative overflow-hidden bg-white">
-  <div class="grid grid-cols-1 max-w-screen-lg mx-auto">
-    
-
-    <div class="w-full flex flex-col pl-16">
-      <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10"></h2>
-      <div class="h-full mt-auto overflow-hidden relative">
-        <img src="../assets/gambar3.jpg" class="h-full w-full object-contain" alt="">
-      </div>
+<!-- Konten Tentang Kami -->
+<div id="TentangKami" class="py-11 relative overflow-hidden bg-white">
+  <div class="max-w-screen-lg mx-auto">
+    <article>
+    <header class="mx-auto max-w-screen-xl pt-28 text-center bg-emerald-100">
+      <h1 class="mt-2 text-3xl font-bold text-blue-800 sm:text-5xl">Tentang Voluniffy</h1>
+      <p class="mt-6 text-lg text-gray-700">wadah online untuk mempertemukan relawan di banyak lingkungan.</p>
+      <img class="sm:h-[34rem] mt-10 w-full object-contain" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Featured Image" />
+    </header>
+    <br>
+<center>
+<div class="w-fit mx-auto mt-10 flex space-x-2">
+  <div class="h-0.5 w-2 bg-gray-600"></div>
+  <div class="h-0.5 w-32 bg-gray-600"></div>
+  <div class="h-0.5 w-2 bg-gray-600"></div>
+</div>
+</center>
+<div class="mx-auto mt-10 max-w-screen-xl bg-emerald-100">
+    <div class="mx-auto mt-10 max-w-screen-md space-y-12 px-4 py-10 font-serif text-lg tracking-wide text-gray-700 ">
+      <strong class="text-2xl font-medium">Volunifyy adalah organisasi nirlaba berbasis online yang mempertemukan organisasi sosial yang membutuhkan relawan dengan siapapun yang ingin menjadi relawan.</strong>
+      <p>Mimpi kami adalah melihat kegiatan menjadi relawan sebagai gaya hidup. Di mana relawan bukan lagi kegiatan sosial yang eksklusif tapi sudah menjadi kebiasaan masyarakat Indonesia.</p>
+      <p>Misi utama kami yakni ingin membuat kolaborasi antara relawan dengan organisasi/komunitas dengan misi sosial menjadi lebih mudah melalui platform Volunifyy</p>
     </div>
-
+</div>
+  </article>
   </div>
 </div>
+<!-- End Konten Tentang Kami -->
 
-<div class="py-12 relative overflow-hidden bg-white">
-  <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
-    <div class="w-full flex flex-col items-end pr-16">
-      <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10"></h2>
-      <div class="h-full mt-auto overflow-hidden relative">
-        <img src="../assets/gambar2.jpg" class="h-full w-full object-contain" alt="">
-      </div>
-    </div>
 
-    <div class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
-      <div class="relative z-20 pl-12">
-        <h1 class="text-[#f7d0b6] font-black text-3xl leading-snug mb-10">Visi</h1>
-        <p class="text-white text-m">
-          Relawan Sebagai Pemimpin Bangsa
-          </p>
-          <h1 class="text-[#f7d0b6] font-black text-3xl leading-snug mb-10">Misi<br></h1>
-        <p class="text-white text-m">
-         > Mengedukasi relawan di berbagai bidang <br>
-> Menggerakan relawan di segala lapisan dan aspek kemasyarakatan <br>
-> Menggerakan partisipasi aktif masyarakat dalam kemandirian <br>
-> Berpartisipasi aktif dalam berbagai forum kerelawanan dan kemanusiaan <br>
-> Berperan aktif dalam kebijakan pemerintah daerah maupun pusat.
-          </p>
+<!-- Konten Syarat & Ketentuan -->
+<div id="Syarat&Ketentuan" class="py-12 relative overflow-hidden bg-emerald-50">
+  <div class=" max-w-screen-lg mx-auto">
+    <div class="mx-auto mt-10 max-w-screen-xl bg-blue-100">
+<div class="relative overflow-hidden bg-blue-100">
+  <div class="bg-white pt-10 pb-14 sm:pt-16 lg:overflow-hidden lg:pt-24 lg:pb-24">
+    <div class="mx-auto max-w-5xl lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+        <div class="mx-auto max-w-md px-4 text-center sm:max-w-2xl sm:px-6 lg:flex lg:items-center lg:px-0 lg:text-left">
+          <div class="lg:py-24">
+            <h1 class="mt-4 text-4xl font-bold tracking-tight text-blue-800 sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"><span class="block text-green-500">Syarat </span><span class="block text-black">dan Ketentuan</span></h1>
+            <p class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Voluniffy berkomitmen untuk melindungi privasi anda dan akan membuat upaya yang wajar untuk memberikan pengalaman pengguna yang aman dan nyaman.</p><br>
+            <h1 class="mt-3 text-medium text-black-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Tanggung Jawab Relawan</h1>
+            <p class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Sebagai relawan, Anda bertanggung jawab penuh atas perilaku dan implikasi perilaku Anda pada Situs maupun ketika Anda mendaftar menjadi relawan.Volunifyy tidak bertanggung jawab atas perilaku Anda saat berinteraksi dengan organisasi-organisasi sosial.</p>
+            <div class="mt-10 sm:mt-12">
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 hidden lg:block"><img class="" src="../assets/logo2.png" alt="" /></div>
       </div>
     </div>
   </div>
 </div>
-</div> 
+</div>
+
+    <!-- Konten disini -->
+  </div>
+</div>
+</div>
 </template>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var sections = document.querySelectorAll('div[id]');
+    var scrollPosition = window.scrollY;
+
+    sections.forEach(section => {
+      var top = section.offsetTop;
+      var height = section.offsetHeight;
+      var id = section.getAttribute('id');
+      var menuItem = document.querySelector('.menu-item[href="#' + id + '"]');
+
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        menuItem.classList.add('active');
+      } else {
+        menuItem.classList.remove('active');
+      }
+    });
+  });
+</script>
+
+
 <style>
 .menu-item {
   text-decoration: none;
@@ -138,5 +208,10 @@
   background-color: #63aef5;
   border-color: #333; /* Ganti warna latar belakang sesuai keinginan */
 }
+
+.darkened-img {
+  filter: brightness(0.8); /* Nilai kurang dari 1 membuat gambar lebih gelap */
+}
+
 
 </style>

@@ -1,14 +1,72 @@
 <template>
-    <footer class="relative mt-20 bg-gray-900 px-4 pt-20">
-  <div class="absolute -top-10 left-1/2 h-16 w-16 -translate-x-1/2 rounded-xl border-4 border-sky-500 bg-white p-2"><img class="h-full object-contain" src="" alt="" /></div>
-  <nav aria-label="Footer Navigation" class="mx-auto mb-10 flex max-w-lg flex-col gap-10 text-center sm:flex-row sm:text-left">
-    <a href="#" class="font-medium text-white">Demo</a>
-    <a href="#" class="font-medium text-white">Support</a>
-    <a href="#" class="font-medium text-white">Privacy Policy</a>
-    <a href="#" class="font-medium text-white">Terms & Conditions</a>
-  </nav>
-  <p class="py-10 text-center text-gray-300">© 2022 Boleno | All Rights Reserved</p>
+
+<footer class="relative bg-gray-200 pt-8 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl font-semibold text-blueGray-700 italic">Volunifyy</h4> <br>
+        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+          <b>Volunifyy</b> adalah organisasi nirlaba berbasis online yang mempertemukan organisasi sosial yang membutuhkan relawan dengan siapapun yang ingin menjadi relawan.
+        </h5>
+        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+          <b>Ubah niat baik jadi aksi baik hari ini</b>
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">Tentang Kami</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Pengertian Volunifyy</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Syarat &amp; Ketentuan</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"></span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"></a>
+              </li>
+              <li>
+                
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile"> </a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2024</span> <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"></a>
+          <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Volunifyy</a>.
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
-
-
 </template>

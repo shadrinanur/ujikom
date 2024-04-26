@@ -1,17 +1,22 @@
-<template>
-   <nav class="bg-blue-100 w-full flex justify-between items-center mx-auto px-8 h-16">
-      <div class="hidden sm:block flex-shrink flex-grow-0 justify-start px-2">
-        <div class="inline-block">
-          
-          <div class="text-lg font-medium centered-text">
-            <h1>
-              <div class="flex items-center h-16 bg-blue-100">
-     <!-- Tambah wrapper dan class -->
+ <!-- component -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+  <div class="min-h-screen flex flex-row bg-gray-100">
+
+<div class="flex flex-col w-56 bg-white overflow-hidden">
+      <div class="flex items-center h-16 bg-blue-100"> <!-- Tambah wrapper dan class -->
       <div>
         <img src="../assets/logo2.png" class="h-16" alt="Logo">
       </div>
       <p class="text-lg font-medium text-gray-900 dark:text-black"><span class="italic">Volunifyy</span></p>
-      <ul class="flex flex-row py-4 space-x-1 justify-start" style="margin-left: 200px;">
+      </div>
+      
+      <div class="overflow-y-auto overflow-x-hidden flex-grow">
+        <ul class="flex flex-col py-4 space-y-1 justify-start">
+          <li class="px-5">
+            <div class="flex flex-row items-center h-8">
+              <div class="text-sm font-light tracking-wide text-gray-500">Menu</div>
+            </div>
+          </li>
           <li>
             <a href="/" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
               <span class="inline-flex justify-center items-center ml-4">
@@ -56,12 +61,16 @@
     
         <div class="overflow-y-auto overflow-x-hidden flex-grow">
         <ul class="flex flex-col py-4 space-y-1">
-          
+          <li class="px-5">
+            <div class="flex flex-row items-center h-8">
+              <div class="text-sm font-light tracking-wide text-gray-500">Settings</div>
+            </div>
+          </li>
           </ul>
           </div>
        
 
-        <div v-if="isAuthenticated" class="flex md:order-2" style="margin-left: 300px;">
+        <div v-if="isAuthenticated" class="flex md:order-2">
         <li>
           <button @click="logout" type="button" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
             <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
@@ -71,65 +80,7 @@
         </div>
       </ul> 
       </div>
-      
-            </h1>
-          </div>
-        </div>
     </div>
-    <!-- end search bar -->
-
-    <!-- login -->
-    <div class="flex-initial">
-      <div class="flex justify-end items-center relative">
-       
-        <div class="flex mr-4 items-center">
-          <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full" href="#">
-            <div class="flex items-center relative cursor-pointer whitespace-nowrap"></div>
-          </a>
-          <div class="block relative">
-            <button type="button" class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative ">
-              <div class="flex items-center h-5">
-              </div>
-            </button>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <!-- end login -->
-    </nav>
    
-   </template>
 
-<style>
-.centered-text {
-  text-align: center;
-}
-/* Gaya untuk container utama */
-.flex {
-  display: flex;
-}
-
-/* Gaya untuk sidebar */
-.sidebar {
-  flex: 0 0 25%; /* Atur lebar sidebar sesuai kebutuhan */
-  /* Gaya lain untuk sidebar */
-}
-</style>
-
-   <script>
-  import { mapActions, mapGetters } from 'vuex';
-  import Beranda from '@/views/Beranda.vue';
-
-  export default {
-    computed: {
-      ...mapGetters('auth', ['isAuthenticated']),
-    },
-    methods: {
-      ...mapActions('auth', ['logout']),
-    },
-    components: {Beranda}
-  };
-  </script>
-   
+  </div>

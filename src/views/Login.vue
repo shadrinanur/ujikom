@@ -28,7 +28,7 @@
                  </div>
 
                <div class="flex flex-col w-full my-5">
-                <label for="password" class="text-gray-500 mb-2">Password</label>
+                <label for="password" class="text-gray-500 mb-2">Kata Sandi</label>
                 <input
                  type="password"
                  class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
@@ -64,7 +64,6 @@
                   </div>
                 </button>
                 <div class="flex justify-evenly mt-5">
-                
                   <a
                     href="/register"
                     class="w-full text-center font-medium text-gray-500"
@@ -110,7 +109,7 @@ async performLogin() {
     const result = await this.login(credentials);
     if (result == true) {
       alert('Login Success');
-      this.$router.push("/pendaftaran");
+      this.$router.push("/aktivitas");
     } else {
       alert('Invalid email or password. Please try again.');
     }

@@ -1,28 +1,25 @@
 <template>
   <div>
     <Sidebar v-if="showSidebar"></Sidebar>
-    <!-- <SidebarAdmin v-if="showSidebarAdmin"></SidebarAdmin> -->
-    <main>
     <router-view></router-view>
-    <!-- <Footer></Footer> -->
-  </main>
-</div>
+    <Footer v-if="showFooter"></Footer>
+  </div>
 </template>
 
 <script>
 import Sidebar from './components/Sidebar.vue';
-// import SidebarAdmin from './components/SidebarAdmin.vue';
-// import Footer from './components/Footer.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
     Sidebar,
     // SidebarAdmin,
-    // Footer,
+    Footer,
   },
   data() {
     return {
       showSidebar: true,
+      showFooter: true
       // showSidebarAdmin: true,  
     };
   },
@@ -30,8 +27,9 @@ export default {
     // Menanggapi perubahan rute
     $route(to) {
       // Mengubah showSidebar berdasarkan halaman tertentu
-      this.showSidebar= !["Beranda", "Login", "Register", "Panduan",  "Syarat","Tentang"].includes(to.name);
+      this.showSidebar = !["Beranda", "Login", "Register", "Panduan", "Syarat", "Tentang", "ProfileUser", ""].includes(to.name);
+      this.showFooter = !["Login", "Register"].includes(to.name);
     },
-},
+  },
 }
 </script>
